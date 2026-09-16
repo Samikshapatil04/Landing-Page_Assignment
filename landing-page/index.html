@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edufyi Career Accelerator — Learn the Skill. Land the Role.</title>
+<meta name="description" content="A mentor-led, 12-week career accelerator across 25+ in-demand domains. Get matched with an industry mentor in 48 hours.">
+
+<!-- Fonts: Fraunces (display serif) + Space Grotesk (body/UI) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">Edufyi</a>
+    <a href="#signup" class="btn btn--ghost header-cta">Book My Free Career Audit</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <h1 class="hero-headline">
+        Learn the skill.<br>
+        Land the role.<br>
+        Skip the guesswork.
+      </h1>
+
+      <p class="hero-sub">
+        Edufyi pairs you with a vetted industry mentor and a focused 12-week
+        roadmap across 25+ in-demand domains — so your time goes into building
+        real, hireable skills instead of scrolling job boards.
+      </p>
+
+      <ul class="hero-bullets">
+        <li>
+          <svg class="bullet-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.8 3.8L16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Matched with a vetted mentor within 48 hours</span>
+        </li>
+        <li>
+          <svg class="bullet-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.8 3.8L16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Structured 12-week roadmap across 25+ domains</span>
+        </li>
+        <li>
+          <svg class="bullet-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.8 3.8L16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Direct referrals into our 40+ hiring-partner network</span>
+        </li>
+      </ul>
+
+      <!-- ===== LEAD CAPTURE FORM ===== -->
+      <form id="signup" class="lead-form" novalidate>
+        <div class="field">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="Your first name" required autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <button type="submit" class="btn btn--cta">
+          <span class="btn-label">Book My Free Career Audit</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-note">No spam. One email to confirm your spot, then we're done.</p>
+
+        <!-- Success / error states, shown by script.js -->
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <!-- Product mockup: a lightweight "mentor match" card stack, built in inline SVG -->
+      <svg viewBox="0 0 520 560" class="mockup-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="520" height="560" rx="20" class="mockup-bg"/>
+
+        <!-- top bar -->
+        <rect x="28" y="28" width="464" height="52" rx="12" class="mockup-card"/>
+        <circle cx="56" cy="54" r="14" class="mockup-avatar"/>
+        <rect x="82" y="44" width="150" height="10" rx="5" class="mockup-line-strong"/>
+        <rect x="82" y="60" width="100" height="8" rx="4" class="mockup-line"/>
+        <rect x="404" y="42" width="64" height="22" rx="11" class="mockup-pill"/>
+
+        <!-- progress module -->
+        <rect x="28" y="96" width="464" height="140" rx="16" class="mockup-card"/>
+        <rect x="52" y="120" width="180" height="12" rx="6" class="mockup-line-strong"/>
+        <rect x="52" y="144" width="416" height="10" rx="5" class="mockup-track"/>
+        <rect x="52" y="144" width="268" height="10" rx="5" class="mockup-progress"/>
+        <rect x="52" y="170" width="120" height="8" rx="4" class="mockup-line"/>
+
+        <rect x="52" y="196" width="126" height="26" rx="8" class="mockup-chip"/>
+        <rect x="188" y="196" width="126" height="26" rx="8" class="mockup-chip"/>
+        <rect x="324" y="196" width="126" height="26" rx="8" class="mockup-chip mockup-chip--accent"/>
+
+        <!-- mentor session card -->
+        <rect x="28" y="252" width="464" height="112" rx="16" class="mockup-card"/>
+        <circle cx="66" cy="308" r="24" class="mockup-avatar mockup-avatar--lg"/>
+        <rect x="106" y="288" width="170" height="12" rx="6" class="mockup-line-strong"/>
+        <rect x="106" y="308" width="220" height="9" rx="4.5" class="mockup-line"/>
+        <rect x="106" y="324" width="130" height="9" rx="4.5" class="mockup-line"/>
+        <rect x="380" y="290" width="88" height="34" rx="10" class="mockup-pill mockup-pill--accent"/>
+
+        <!-- domain grid -->
+        <rect x="28" y="380" width="222" height="152" rx="16" class="mockup-card"/>
+        <rect x="52" y="404" width="140" height="12" rx="6" class="mockup-line-strong"/>
+        <rect x="52" y="430" width="174" height="8" rx="4" class="mockup-line"/>
+        <rect x="52" y="446" width="174" height="8" rx="4" class="mockup-line"/>
+        <rect x="52" y="462" width="120" height="8" rx="4" class="mockup-line"/>
+        <circle cx="60" cy="496" r="16" class="mockup-avatar--sm"/>
+        <circle cx="92" cy="496" r="16" class="mockup-avatar--sm mockup-avatar--sm2"/>
+        <circle cx="124" cy="496" r="16" class="mockup-avatar--sm mockup-avatar--sm3"/>
+        <rect x="150" y="486" width="76" height="20" rx="10" class="mockup-chip"/>
+
+        <rect x="270" y="380" width="222" height="152" rx="16" class="mockup-card mockup-card--accent">
+        </rect>
+        <rect x="294" y="404" width="130" height="12" rx="6" class="mockup-line-strong mockup-line-strong--light"/>
+        <rect x="294" y="430" width="174" height="8" rx="4" class="mockup-line mockup-line--light"/>
+        <rect x="294" y="446" width="150" height="8" rx="4" class="mockup-line mockup-line--light"/>
+        <text x="294" y="500" class="mockup-big-number">94%</text>
+        <rect x="294" y="510" width="150" height="8" rx="4" class="mockup-line mockup-line--light"/>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="wrap">
+    <p class="trust-bar__label">Learners have gone on to work at teams of every size</p>
+    <!-- Replace the placeholders below with real partner/employer logos before launch -->
+    <ul class="trust-bar__logos">
+      <li>Northwind Labs</li>
+      <li>Verdant Analytics</li>
+      <li>Cascade Systems</li>
+      <li>Harborline</li>
+      <li>Pilcrow &amp; Co.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <h2 class="section-heading">What the last cohort said</h2>
+
+    <div class="testimonial-grid">
+      <figure class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+        </div>
+        <blockquote>
+          My mentor caught the gaps in my portfolio that four months of solo
+          job-hunting never did. Three interview rounds after week nine, I
+          had an offer.
+        </blockquote>
+        <figcaption>
+          <span class="testimonial-name">Priya Raman</span>
+          <span class="testimonial-role">Data Analytics track, hired at Verdant Analytics</span>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9z"/></svg>
+        </div>
+        <blockquote>
+          The roadmap told me exactly what to build each week. No more
+          guessing which tutorial to trust — I just followed the plan and
+          showed up to sessions.
+        </blockquote>
+        <figcaption>
+          <span class="testimonial-name">Arjun Mehta</span>
+          <span class="testimonial-role">Product Design track, hired at Cascade Systems</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="wrap final-cta__inner">
+    <h2>Your next role starts with one form.</h2>
+    <p>Takes 20 seconds. A mentor reaches out within 48 hours.</p>
+    <a href="#signup" class="btn btn--cta btn--large">Book My Free Career Audit</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Edufyi Tech Solutions</span>
+    <span class="footer-links">
+      <a href="#top">Back to top</a>
+    </span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
